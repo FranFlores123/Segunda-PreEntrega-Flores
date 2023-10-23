@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-main: #fc8600;
+    --clr-darkOrange: #361609;
+    --clr-redOrange: #c64306;
+    --clr-lightOrange: #edac629c;
+    --fnt-rubikDirt:'Rubik Dirt', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--clr-main);
+}
+
+aside {
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    padding: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: var(--fnt-rubikDirt);
+    color: black;
+}
+
+main {
+    background-image: url(./images/background__white.jpg);
+    border-radius: 5rem;
+    margin-top: 1.5rem;
+    padding: 3rem;
+    margin-left: 0;
+}
+
+.titulo-pizzas-todas{
+    width: 75%;
+    height: contain;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.titulo-pizzas-todas h2 {
+    color: var(--clr-redOrange);
+    font-family: var(--fnt-rubikDirt);
+    font-size: 2.5rem;
+    padding: 1rem;
+    font-weight: 300;
+    border-radius: 2rem;
+    background-color: var(--clr-lightOrange);
+}
+
+.contenedor-pizzas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.pizza {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-lightOrange);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-main);
+    padding-block: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.pizza-info button {
+    border: 0;
+    background-color: #361609;
+    color: var(--clr-main);
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-darkOrange);
+}
+
+.pizza-info button:hover {
+    background-color: var(--clr-main);
+    color: var(--clr-darkOrange);
+}
+
+.pizza-imagen {
+    max-width: 100%; 
+    padding: 1rem;
+}
