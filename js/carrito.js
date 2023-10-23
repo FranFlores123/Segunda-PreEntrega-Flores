@@ -65,9 +65,10 @@ while (seleccion != "NO") {
   let pizzaN = parseInt(
     prompt(`Agrega una pizza a tu carrito escribiendo su numero`)
   );
+  pizzaN--;
 
   if (Number.isInteger(pizzaN)) {
-    if (pizzaN < 0 || pizzaN > 24) {
+    if (pizzaN < 0 || pizzaN > 23) {
       alert("Por favor ingrese un numero que se encuentre en la lista");
     } else {
       let id = pizzaN;
